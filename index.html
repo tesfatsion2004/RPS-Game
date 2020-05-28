@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors Game</title>
+    <!--Rock Paper Scisors-->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <!--Rock Paper Scisors|ፀወታ ከውሒ-ወረቐት-መቐስ!የኣለት ወረቀት መቀስ ጨዋታ-->
+        <h1>Rock Paper Scissors Game
+            <h1>
+    </header>
+    <p id='language-lable'>Choose a language of your choice:</p>
+    <div class='languages'>
+        <label class='language'><input type="radio" id="English"   name='language'> English</label>
+        <label class='language'><input type="radio" id="Tigrinya"  name='language'>Tigrinya</label>
+        <label class='language'><input type="radio" id="Amharic"   name='language'>Amharic</label><br>
+        <button type="button" id='refresh' onclick="page_reload()">Refresh</button>
+    </div>
+    <div class="score-board">
+        <div id="user-lable" class="badge"> User </div>
+        <div id="computer-lable" class="badge">Computer</div>
+        <span id="user-score">0</span> : <span id="computer-score">0</span>
+    </div>
+    <div class="results">
+        <p>Paper covers rock. You win</p>
+    </div>
+    <div class="choices">
+        <div class="choice" id="lp">
+            <!--img src="images/left-paper.jpg" alt=""-->
+            <img src="images/left-paper.jpg" alt="">
+        </div>
+        <div class="choice" id="lr">
+            <!--img src="images/left-rock.jpg" alt=""-->
+            <img src="images/left-rock.jpg" alt="">
+        </div>
+        <div class="choice" id="ls">
+            <!--img src="images/left-scisor.jpg" alt=""-->
+            <img src="images/left-scisor.jpg" alt="">
+        </div>
+    </div>
+
+    <!--div class="Choices">
+        <div class="" id="rp">
+            <img src="images/right-paper.jpg" alt="">
+        </div>
+        <div class="" id="rr">
+            <img src="images/right-rock.jpg" alt="">
+        </div>
+        <div class="" id="rs">
+            <img src="images/right-scisor.jpg" alt="">
+        </div>
+    </div-->
+    <p id="action-message">Game continuing....</p>
+
+    <div id='note-title' style="color: cyan; font-size:  25px; font-weight: bold;"><u>Note:</u></h2>
+    </div>
+    <div id='note' style='color: greenyellow; font-size: 20px;'>'Rule of the game: if you want to change your language option, refresh the page first. The game has some bug to fix. Selecting two or more languages without refreshing gives erranous resluts. Please fix the program if you can. Procedure: 1) Click
+        \'Refresh\' button 2) Choose language 3) Play.'
+    </div>
+    <p id='address'>Developed by: Tesfatsion G/yohannes, email: tesfatsion2004@gmail.com</p>
+    <script id='myScript' src="app.js" charset="utf-8"></script>
+    <!--script src="/language/en.js" charset="utf-8"></script-->
+    <script>
+        function page_reload() {
+            window.location.reload();
+        }
+    </script>
+</body>
+
+</html>
